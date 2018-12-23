@@ -9,8 +9,7 @@ def Caesar_Cipher(message,key):
     """Takes two inputs, a string and an integer, and rotates the string by "key" values in the alphabet and returns the encryption. """
     
     message=message.upper()
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'.upper() 
-    ls_indices=[]   
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'.upper()  
     encrypt=''
     
     for ch in message:
@@ -18,12 +17,11 @@ def Caesar_Cipher(message,key):
             pass
         else:
             ch_indices=alphabet.find(ch)  
-            ls_indices+=[ch_indices] 
             shift=(ch_indices+key)%26
             encrypt+=alphabet[shift]
         
     return encrypt.upper()
-    return ls_indices
+  
     
         
   
