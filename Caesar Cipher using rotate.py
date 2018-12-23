@@ -17,7 +17,7 @@ def Caesar_Cipher(message,key):
         if ch not in alphabet:
             pass
         else:
-            ch_indices=alphabet.find(ch)  #The find method returns the index of that character in the string.
+            ch_indices=alphabet.find(ch)  
             ls_indices+=[ch_indices] 
             shift=(ch_indices+key)%26
             encrypt+=alphabet[shift]
