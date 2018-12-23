@@ -4,7 +4,6 @@ Created on Fri Dec 21 21:02:18 2018
 
 @author: david
 """
-#Vigenere Cipher
 
 def Vigenere_Cipher(message,key):
     """Vigenere Cipher using list methods in the code.Takes two strings as input."""
